@@ -9,9 +9,8 @@ spec:
   containers:
   - name: postgres-pod
     image: postgres:9.4
-    resources:
-      limits:
-        memory: "64Mi"
-        cpu: "100m"
     ports:
       - containerPort: 5432
+    env:
+    - name: POSTGRES_HOST_AUTH_METHOD
+      value: trust

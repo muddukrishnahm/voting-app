@@ -9,9 +9,5 @@ spec:
   containers:
   - name: voting-app-pod
     image: dockersamples/examplevotingapp_vote
-    resources:
-      limits:
-        memory: "64Mi"
-        cpu: "100m"
     ports:
       - containerPort: 80
