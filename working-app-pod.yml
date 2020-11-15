@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: working-app-pod
+  labels:
+    name: working-app-pod
+    app: demo-voting-app
+spec:
+  containers:
+  - name: working-app-pod
+    image: dockersamples/examplevotingapp_worker
+    resources:
+      limits:
+        memory: "64Mi"
+        cpu: "100m"
