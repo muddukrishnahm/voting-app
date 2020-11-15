@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: result-app-pod
-    image: dockersamples/examplevotingapp_result
+    image: dockersamples/examplevotingapp_result:before
     resources:
       limits:
         memory: "64Mi"

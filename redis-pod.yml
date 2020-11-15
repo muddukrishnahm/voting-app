@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: redis-pod
-    image: redis
+    image: redis:alpine
     resources:
       limits:
         memory: "64Mi"
